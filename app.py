@@ -1,3 +1,21 @@
+st.markdown("""
+    <style>
+    .stApp {
+        background-color: #F9FBFD;
+    }
+    h1 {
+        color: #2E7D32;
+        text-align: center;
+    }
+    .stButton>button {
+        background-color: #4CAF50;
+        color: white;
+        border-radius: 10px;
+        height: 3em;
+        width: 100%;
+    }
+    </style>
+""", unsafe_allow_html=True)
 import streamlit as st
 import pickle
 import pandas as pd
