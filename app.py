@@ -23,9 +23,21 @@ if st.session_state.page == 1:
     height = st.number_input("Height (m)", 1.4, 2.0)
     activity = st.selectbox("Activity Level", ["Low","Moderate","High"])
     disease = st.selectbox(
-        "Health Condition",
-        ["None", "Diabetes", "Kidney Disease", "High BP", "Heart Disease"]
-    )
+    "Health Condition",
+    [
+        "None",
+        "Diabetes",
+        "Kidney Disease",
+        "High BP",
+        "Heart Disease",
+        "PCOS",
+        "Thyroid",
+        "Obesity",
+        "Anemia",
+        "Gastric / Acidity",
+        "Arthritis"
+    ]
+)
 
     activity_map = {"Low":1,"Moderate":2,"High":3}
     activity_value = activity_map[activity]
